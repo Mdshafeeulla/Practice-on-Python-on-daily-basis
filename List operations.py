@@ -1,8 +1,9 @@
-# How can we append inside the list
-from itertools import count
+# We can access the element using the index like Name[0] refers to vinod
+# and if we wanted to access the second alphabet in vinod we can access using
+# Name[0][1] we will take "i" from the vinod
+Name = ["Vinod", "Stephen", "George", "Mohammed",["My","usn"]]
 
-from decorator import append
-from dill import extend
+
 
 Name = ["Vinod", "Stephen", "George", "Mohammed"]
 Name.append("Shafeeulla")
