@@ -1,0 +1,1 @@
+Dictionary uses key value pairs and is represented by "{ }"
