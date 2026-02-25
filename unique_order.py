@@ -2,11 +2,9 @@
 # unique elements while maintaining the original order.
 
 def unique_elements(elem):
-    seen = set()
     unique = []
     for word in elem:
-        if word not in seen:
-            seen.add(word)
+        if word not in unique:
             unique.append(word)
     print(unique)
 
