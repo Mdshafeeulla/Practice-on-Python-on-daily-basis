@@ -1,17 +1,19 @@
+import math
+
 class Solution:
     def findMedianSortedArrays(self, nums1: list[int], nums2: list[int]) -> float:
         nums1.extend(nums2)
         nums1.sort()
         print(nums1)
         if len(nums1) % 2 == 0:
-            median1 = len(nums1) / 2
-            print(median1)
+            median = len(nums1) / 2
+            print(nums1[int(median)],nums1[int(median - 1)])
         else:
             med = len(nums1) / 2
-            median = round(med)
-            print(nums1[median])
+            median = math.ceil(med)
+            print(nums1[median - 1])
 
 
 
 sol = Solution()
-sol.findMedianSortedArrays([1,10,22,55,13,11,15,19],[4,1,1])
+sol.findMedianSortedArrays([1,1,4,2,6,8],[4,3])
