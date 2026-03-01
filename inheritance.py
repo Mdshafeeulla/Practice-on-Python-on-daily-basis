@@ -6,7 +6,7 @@ class Parent:
 
 class Child(Parent):
     def __init__(self,breed_type,animal):
-        super().__init__(animal)
+        super().__init__(animal) #whatever object we want to call from parent put inside the bracket
         self.breed_type = breed_type
     def dog(self):
         print(f"Hello i am {self.animal} and my breed is {self.breed_type}")
@@ -16,4 +16,4 @@ par.animals("Zoo")
 
 chi = Child("Lapador","zoo")
 chi.dog()
-chi.animals("zpp")
+chi.animals("zpp") #As we can see that here we are using child class and calling parent class instances
