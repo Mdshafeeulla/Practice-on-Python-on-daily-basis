@@ -16,4 +16,4 @@ class Solution:
 
 
 sol = Solution()
-sol.findMedianSortedArrays([1,1,4,2,6,8],[4,3])
+sol.findMedianSortedArrays([1,1,4,2,6],[4,3])
